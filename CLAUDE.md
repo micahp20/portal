@@ -20,7 +20,7 @@ There is **no** `portal/` directory, **no** `netlify/functions/` directory, **no
 README, **no** package.json, **no** build tooling. The user prompt mentioned
 some of these; they are not in this repo. The word "portal" inside `index.html`
 refers to the three in-page views (`#pCamper`, `#pStaff`, `#pAdmin` — CSS class
-`.portal`). A separate URL `https://vh1camp.github.io/portal/` is hardcoded into
+`.portal`). A separate URL `https://micahp20.github.io/portal/` is hardcoded into
 outgoing email templates (see "External services" below) but is not part of
 this repo — its relationship to this codebase is unknown from the code alone.
 
@@ -65,7 +65,7 @@ in the JS. Approximate map:
 | Email-sending endpoint | `https://vh1camp2026.netlify.app/.netlify/functions/send-email` | A Netlify Function (source not in this repo) that presumably wraps SendGrid (line 1160) |
 | From address | `admin@vh1basketball.com` | Sender on outgoing email (line 1161) |
 | Google Sheet (JotForm responses) | Sheet ID `1iWz9UiknCSy0WZcEgYO50nmD3IBs-puNxRNoIFXdNYk`, read via `https://docs.google.com/spreadsheets/d/.../gviz/tq?tqx=out:json&sheet=Form+responses` | Admin "Sync JotForm" button; sheet must be publicly readable for Gviz (lines 1874, 1879) |
-| External portal URL (emails only) | `https://vh1camp.github.io/portal/` | Linked from outgoing email templates (lines 1831, 2058, 2104, 2111, 2562, 2639). Not otherwise used in the app. |
+| External portal URL (emails only) | `https://micahp20.github.io/portal/` | Linked from outgoing email templates (lines 1831, 2058, 2104, 2111, 2562, 2639). Not otherwise used in the app. |
 | Google Fonts | Bebas Neue, Barlow | Typography |
 | cdnjs XLSX | `https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js` | Lazy-loaded for Excel import (index.html:~2158) |
 
